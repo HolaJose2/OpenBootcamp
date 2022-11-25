@@ -1,0 +1,48 @@
+{%load static%}
+
+<nav class="navbar navbar-expand-xl fixed-top navbar-dark ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'images/WhatsApp-Image-2022-08-29-at-7.40.52-AM-modified.webp' %}" alt="Logo" width="40"
+                class="d-inline-block ">
+            <span class="align-middle" id="nombre-fundacion"> Goticas de Amor Animal</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-3" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="apadrina.html">Apadrina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adopta.html">Adopta</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contribuye
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Apoya a la fundacion</a></li>
+                        <li><a class="dropdown-item" href="#">Voluntariados</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hogar de paso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iniciosesion.html">Iniciar de Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Registrarse</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

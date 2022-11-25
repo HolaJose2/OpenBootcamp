@@ -1,0 +1,66 @@
+{%extends 'layouts/base.html'%}
+
+{%load static%}
+
+{% block title%}Fundacion Goticas de amor animal{%endblock%}
+
+{%block content%}
+<div class="fondo container-fluid">
+    <div class="hero__container container">
+        <h1 class="hero__title">Hola, somos la fundación
+            Goticas de amor animal.</h1>
+        <p class="hero__paragraph">Buscamos acompañar en su ciclo de vida cada animalito de la familia Goticas de
+            amor animal, enfocandonos en rescatarlos, alimentarlos y brindarles un espacio propio lleno de mucho
+            amor y entrega para cada uno de ellos.</p>
+        <a href="#" class="cta">Donar</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class=" text-center SobreNosotros">
+        <h2 class="subtitulo">Te contamos un poco de nosotros</h2>
+        <p class="about__paragraph">Nuestra fundacion fue creada en el año 2002 y ha albergado aproximadamente
+            400
+            animalitos sin hogar, de los cuales hoy en día hay un total de 48 de perros, 30 de gatos, 3
+            Tortugas,
+            aves (2 Pavos Reales, 3 Gallinas,1 Gallo,3 Patos, 2 Loras y aves de la zona) .
+            Nuestros espacios siempre están abiertos a todos lo animales tanto silvestres como domésticos con el
+            fin
+            de brindarle un hogar donde se suplan la mayor parte posible de sus necesidades básicas. </p>
+
+        <div class="about__main">
+            <div class="about__icons">
+                <img src="{% static 'images/quienessomos.svg'%}" class="about__icon">
+                <h3 class="titulo-tarjeta">¿Quienes somos ?</h3>
+                <p class="about__paragrah"> Somos una fundación sin ánimo de lucro, que se enfoca en restablecer
+                    los
+                    derechos de los animales domésticos en situación de calle.
+                </p>
+            </div>
+
+            <div class="about__icons">
+                <img src="{%static 'images/mision.svg'%}" class="about__icon">
+                <h3 class="titulo-tarjeta">Misión</h3>
+                <p class="about__paragrah">
+                    Velar por el bienestar y restauración del rol de los animales domésticos en la familia y la
+                    sociedad, así mismo custodiar que sus derechos se respeten y se reintegren como es debido.
+                </p>
+            </div>
+
+            <div class="about__icons">
+                <img src="{%static 'images/vision.svg'%}" class="about__icon">
+                <h3 class="titulo-tarjeta">Visión</h3>
+                <p class="about__paragrah">Brindar bienestar y calidad de vida a cada uno de nuestros animalitos
+                    que
+                    hacen parte de esta gran familia.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
+
+
+{%block scripts%} 
+<script src="{% static 'js/slider.js'%}"></script>
+<script src="{% static 'js/questions.js'%}"></script>{%endblock%}
