@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Obtener todos los autores que contienen en su nombre la palabra yes</h1>
+    <ul>
+        {%for cont in contain%}
+        <li>{{cont.name}}</li>
+        {%endfor%}
+        
+    </ul>
+
+    <h1>Obteniendo elementos cuyo id es menor o igual a 15</h1>
+    <ul>
+        {%for filter in filters2%}
+        <li>{{filter.email}}</li>
+        {%endfor%}
+        
+    </ul>
+
+    <h1>Elementos ordenados por email</h1>
+    <ul>
+        {%for order in orders%}
+        <li>{{order.email}}</li>
+        {%endfor%}
+        
+    </ul>
+
+    <h1>Busqueda limitada, con offset</h1>
+    <ol>
+        {%for offset in offsets%}
+        <li>{{offset.email}}</li>
+        {%endfor%}
+        
+    </ol>
+
+
+    <h1>Obteniendo los 10 primeros</h1>
+    <ol>
+        {%for limit in limits%}
+        <li>{{limit.email}}</li>
+        {%endfor%}
+        
+    </ol>
+
+    <h1>Un unico autor (filtrado por id)</h1>
+    <p>{{author.email}}</p>
+
+
+
+    <h3>Autor con email kyle10@example.org</h3>
+    <ul>
+        {%for a in authorfilter%}
+        <li>{{a.name}} | {{a.email}}</li>
+        {%endfor%}
+
+    </ul>
+
+    <h1>Autores</h1>
+    <ul>
+        {%for author in authors%}
+            <li>{{author.name}} ({{author.email}})</li>
+        {%endfor%}
+        <h3>Total autores: {{authors|length}}</h3>
+    </ul>
+    
+</body>
+</html>
