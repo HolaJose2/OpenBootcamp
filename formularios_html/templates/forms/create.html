@@ -1,0 +1,6 @@
+<h1>FORMULARIO POST</h1>
+<form action="{%url 'postgoal'%}" method="POST">
+    {%csrf_token%}
+    <input type="text" name="info" placeholder="Esciribe...">
+    <input type="submit" value="Enviar">
+</form>
