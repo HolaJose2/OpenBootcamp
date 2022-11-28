@@ -1,0 +1,13 @@
+{%extends 'layouts/base.html'%}
+
+
+{%block title%}Inicio{%endblock%}
+
+{%block content%}
+    <h1>Bienvenido a tu gestor Personal</h1>
+    <div class="cards">
+        <div ><a href="{%url 'contacto'%}" class="card">CONTACTOS</a></div>
+        <div ><a href="{%url 'tarea'%}" class="card">TAREAS</a></div>
+    </div>
+    
+{%endblock%}

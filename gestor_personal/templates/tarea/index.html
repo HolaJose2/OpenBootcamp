@@ -1,0 +1,31 @@
+{%extends 'layouts/base.html'%}
+
+{%block title%} Tareas{%endblock%}
+
+{%block content%}
+<h1>Tareas</h1>
+<br />
+<form action="{%url 'tarea'%}" class="search" method="GET">
+    <input type="text" name="search" placeholder="Buscar tarea" class="barra-busqueda">
+    <input type="submit" value="Buscar" class="btn buscar">
+</form>
+<br />
+
+<span class="aux-btns">
+    <a href="{%url 'tarea'%}">Ver todos</a>
+    <a href="{%url 'crearTarea' %}">Añadir</a>
+</span>
+<br />
+
+<ul class="lista">
+    {%for tarea in tareas %}
+    <li>{{tarea}}
+        <span>
+            <a href="{% url 'view' id=tarea.id%}" class="btn btn-ver">Ver</a>
+            <a href="{%url 'editarTarea' id=tarea.id %}" class="btn btn-editar">Editar</a>
+            <a href="{%url 'eliminarTarea' id=tarea.id %}" class="btn btn-borrar">Borrar</a>
+        </span>
+    </li>
+    {%endfor%}
+</ul>
+{%endblock%}

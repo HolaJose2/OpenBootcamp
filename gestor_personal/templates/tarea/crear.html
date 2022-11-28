@@ -1,0 +1,17 @@
+{%extends 'layouts/base.html'%}
+
+{%block title%} Crear Contactos {%endblock%}
+
+{%block content%}
+<h1>Crear Tarea</h1>
+
+
+<span class="aux-btns-form">
+    <a href="{%url 'tarea' %}">Volver Atras</a>
+</span>
+<form action="{% url 'crearTarea' %}" id="crearContactos" method="POST">
+    {%csrf_token%}
+    {{form.as_div}}
+    <input type="submit" value="Guardar">
+</form>
+{%endblock%}

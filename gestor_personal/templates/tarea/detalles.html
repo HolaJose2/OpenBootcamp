@@ -1,0 +1,19 @@
+{%extends 'layouts/base.html'%}
+
+{%block title%} Contacto {{contact.name}} {%endblock%}
+
+{%block content%}
+
+<h1>Contactos</h1>
+<br />
+<span class="aux-btns">
+    <a href="{%url 'tarea'%}">Volver Atras</a>
+</span>
+<br />
+
+<ul class="lista">
+    <li><b>Titulo:</b>{{tarea.titulo}}</li>
+    <li><b>Descripcion</b>{{tarea.descripcion}}</li>
+    <li><b>Fecha de creacion</b>{{tarea.date}}</li>
+</ul>
+{%endblock%}
