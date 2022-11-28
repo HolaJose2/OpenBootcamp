@@ -1,0 +1,34 @@
+{%extends 'layouts/base.html'%}
+
+{%block title%} Mascotas{%endblock%}
+
+{%block content%}
+<div class="container formulario">
+    <h1>Mascotas</h1>
+    <br />
+    <form action="{%url 'mascota'%}" class="search" method="GET">
+        <input type="text" name="search" placeholder="Buscar mascota" class="barra-busqueda">
+        <input type="submit" value="Buscar" class="btn buscar">
+    </form>
+    <br />
+
+    <span class="aux-btns">
+        <a href="{%url 'mascota'%}">Ver todos</a>
+        <a href="{%url 'crearMascota' %}">Añadir</a>
+    </span>
+    <br />
+
+    <ul class="lista">
+        {%for mascota in mascotas %}
+        <li>{{mascota}}
+            <span>
+                <a href="{% url 'view' id=mascota.id%}" class="btn btn-ver">Ver</a>
+                <a href="{%url 'editarMascota' id=mascota.id %}" class="btn btn-editar">Editar</a>
+                <a href="{%url 'eliminarMascota' id=mascota.id %}" class="btn btn-borrar">Borrar</a>
+            </span>
+        </li>
+        {%endfor%}
+    </ul>
+</div>
+
+{%endblock%}

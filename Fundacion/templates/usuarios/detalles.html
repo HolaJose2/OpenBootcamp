@@ -1,0 +1,27 @@
+{%extends 'layouts/base.html'%}
+
+{%block title%} Usuario {%endblock%}
+
+{%block content%}
+<div class="container formulario">
+
+    <h1>Usuario</h1>
+    <br />
+    <span class="aux-btns">
+        <a href="{%url 'usuario'%}" >Volver Atras</a>
+
+    </span>
+    <br />
+
+    <ul class="lista">
+        <li><b>Nombre:</b>{{usuario.nombre}}</li>
+        <li><b>Apellido:</b>{{usuario.apellido}}</li>
+        <li><b>Correo:</b>{{usuario.correo}}</li>
+        <li><b>Contraseña:</b>{{usuario.contraseña}}</li>
+        <li><b>Celular:</b>{{usuario.celular}}</li>
+        <li><b>Direccion:</b>{{usuario.direccion}}</li>
+        <li><b>Rol:</b>Usuario</li>
+    </ul>
+</div>
+
+{%endblock%}

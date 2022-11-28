@@ -1,0 +1,26 @@
+{%extends 'layouts/base.html'%}
+
+{%block title%} Editar Mascota {%endblock%}
+
+{%block content%}
+<div class="container formulario">
+
+    <h1>Mascotas</h1>
+    {% if messages %}
+    <ul class="alert-success">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+
+    <span class="aux-btns-form">
+        <a href="{%url 'mascota'%}">Volver Atras</a>
+    </span>
+    <form action="{%url 'editarMascota' id=id %}" class="div-formulario" method="POST">
+        {%csrf_token%}
+        {{form.as_div}}
+        <input type="submit" value="Guardar" class="btn-guardar">
+    </form>
+</div>
+{%endblock%}

@@ -58,9 +58,244 @@
     </div>
 </div>
 
+<div class="knowledge">
+    <div class="knowledge__container container">
+        <div class="knowledege__texts">
+            <h2 class="subtitulo text-center">¿Como puedes ayudar a la fundación? <br /> ¡Recuerda que hay
+                diversas maneras
+                de realizar aportes!</h2>
+            <p class="parrafo lh-base">Unirte a esta maravillosa familia es muy sencillo, puedes realizar
+                aportes de diversas maneras, ya sea por donaciones, pasantías o voluntariados en nuestra
+                entidad.
+                Es por esto que te invitamos a dejar tu huella en el corazón de cada uno de nuestros animalitos
+                por medio de voluntariados ¡Anímate a participar del proceso y dile si a el cambio!
+            </p>
+            <a href="#" class="cta">Contribuir</a>
+        </div>
+
+        <figure class="knowledge__picture">
+            <img src="{% static 'images/mono.webp'%}" alt="fundacion goticas de amor animal " class="knowledge__img">
+        </figure>
+    </div>
+</div>
+
+
+<!-- parte de la pagina donde se visualiza el plan padrino-->
+<div class="superpadrino price container text-center">
+    <h2 class="subtitulo ">
+        Pertenece a él apoyo super padrino.
+    </h2>
+
+    <div class="price__table">
+        <div class="price__element">
+            <p class="price__name">Apoyo de: </p>
+            <h3 class="price__price">$80.000/mes</h3>
+
+            <div class="price__items">
+                <p class="price__features">Alimentación</p>
+                <p class="price__features">Utensilios de limpieza</p>
+
+            </div>
+
+            <a href="#" class="price__cta cta">Apadrinar ahora</a>
+        </div>
+
+
+        <div class="price__element price__element--best">
+            <p class="price__name">Apoyo de: </p>
+            <h3 class="price__price">$150.000/mes</h3>
+
+            <div class="price__items">
+                <p class="price__features">Alimentación </p>
+                <p class="price__features">Medicamentos </p>
+                <p class="price__features">Utensilios de limpieza</p>
+            </div>
+
+            <a href="#" class="price__cta cta1">Apadrinar ahora</a>
+        </div>
+
+
+        <div class="price__element">
+            <p class="price__name">Apoyo de:</p>
+            <h3 class="price__price">$60.000/mes</h3>
+
+            <div class="price__items">
+                <p class="price__features">Alimentación</p>
+                <p class="price__features">Utensilios de entretenimiento</p>
+
+            </div>
+
+            <a href="#" class="price__cta cta">Apadrinar ahora</a>
+        </div>
+
+    </div>
+</div>
+
+<!--Comienzo de carrusel de imagenes con la descripcion de cada animalito -->
+
+<div class="testimony">
+    <div class="testimony__container container">
+        <img src="{% static 'images/leftarrow.svg'%}" class="testimony__arrow" id="before">
+        <!--imagen de la flecha de siguiente del carrusel de imagenes-->
+
+        <div class="testimony__body testimony__body--show" data-id="1">
+            <div class="testimony__texts">
+                <h2 class="subtitulo">!Hola! Mi nombre es Killer<span class="testimony__course"> soy un Peludito
+                        lleno de amor y
+                        cariño para ti </span></h2>
+                <p class="testimony__review">Tengo 8 años de edad, soy un labrador negro grande y cariñoso que
+                    desea tenerte como integrante de esta gran familia.</br>
+                    ¡Anímate a participar del proceso y dile si a el cambio!
+                </p>
+            </div>
+
+            <figure class="testimony__picture">
+                <img src="{% static 'images/killer.webp'%}" class="testimony__img">
+            </figure>
+        </div>
+
+        <div class="testimony__body" data-id="2">
+            <div class="testimony__texts">
+                <h2 class="subtitulo">!Hola! Mi nombre es Anita <span class="testimony__course">soy una gata
+                        amigable y curiosa por saber ¿Si vas a pertenecer a el plan super padrino? .</span></h2>
+                <p class="testimony__review">Si eres parte del plan super padrino te enviamos muchas huellitas
+                    llenas de amor y cariño para ti, pero si a un no perteneces,
+                    no te preocupes a un está a tiempo de ser parte de nuestra familia ¡Anímate a ser un Super
+                    padrino!
+                </p>
+            </div>
+
+            <figure class="testimony__picture">
+                <img src="{% static 'images/anitagata.webp'%}" class="testimony__img">
+            </figure>
+        </div>
+
+        <div class="testimony__body" data-id="3">
+            <div class="testimony__texts">
+                <h2 class="subtitulo">!Hola! Mi nombre es Tamara <span class="testimony__course"> soy una perra
+                        pastor collie de edad avazada </span></h2>
+                <p class="testimony__review">Por mi experiencia, puedo asegurarte que tienes un gran potencial
+                    para ser voluntario en nuestra familia y compartir con todos mis hermanos esa capacidad de
+                    asumir retos que llevas contigo ¡Anímate a ser voluntario en nuestra Fundación!</p>
+            </div>
+
+            <figure class="testimony__picture">
+                <img src="{%static 'imager/anitagata.webp' %}" class="testimony__img">
+            </figure>
+        </div>
+
+
+
+
+        <img src="{%static 'images/rightarrow.svg'%}" class="testimony__arrow" id="next">
+        <!--imagen de la flecha del carrusel de imagenes-->
+    </div>
+</div>
+
+<!--Menu desplegable de inf sobre la fundacion -->
+
+<!--Comienza las opciones de preguntas frecuentes-->
+<div class="questions container">
+    <h2 class="subtitulo">Preguntas frecuentes</h2>
+    <p class="questions__paragraph">Esta son algunas de las inquietudes mas frecuetes que nos suelen realizar:
+    </p>
+
+    <div class="questions__container">
+        <div class="questions__padding">
+            <div class="questions__answer">
+                <h3 class="questions__title">¿Apesar de que no tenga experiencia puedo ser voluntari@?
+                    <span class="questions__arrow">
+                        <img src="{% static 'images/arrow.svg' %}" class="questions__img">
+                    </span>
+                </h3>
+
+                <p class="questions__show">Por supuesto que sí, es impórtate resaltar que cada aprendizaje que
+                    obtuviste de circunstancia o sucesos que hayas vivido, te ha brindado unas experiencias
+                    enriquecedoras de las cuales has aprendido y estamos seguros que varias de ellas las podrás
+                    aplicar con nosotros, un claro ejemplo es: saber detectar los signos de enfermedad y
+                    tristeza en un ser vivo o humano.
+                    Recuerda no limitarte, tu eres el candidato número uno para nuestra vacante de voluntariado
+                    anímate a ser parte de esta maravillosa experiencia de la mano de esta gran familia.
+                </p>
+            </div>
+        </div>
+        <!--inicio de  barras desplegables  verticales -->
+        <div class="questions__padding">
+            <div class="questions__answer">
+                <h3 class="questions__title">
+                    ¿Qué proceso debo realizar para poder adoptar un animalito de la fundación?
+
+                    <span class="questions__arrow">
+                        <img src="{% static 'images/arrow.svg' %}" class="questions__img">
+                    </span>
+                </h3>
+
+                <p class="questions__show">
+
+                    • La persona responsable de la adopción del peludo o michis debe tener una edad igual o
+                    superior a los 25 años en adelante para poder continuar con este maravillo
+                    proceso.</br></br>
+
+                    • Importante tener presente que este amigo peludo que adoptes, es una responsabilidad
+                    constante que requiere de un espacio, tanto en tu corazón como en tu hogar, es también un
+                    compromiso material (monetario), actitudinal (disposición y tiempo para dedicarle) y
+                    emocional (Amor y respeto por los animales). Este te acompañara en un promedio de tiempo de
+                    12 a 15 años.</br></br>
+
+
+                    • Tramitar el pre formulario de adopción en el apartado de adopción en nuestra página y
+                    luego de esto enviarlo, recuerda que la respuesta para continuar con el proceso será enviada
+                    a tu correo electrónico que diligenciaste en el formulario, esta podría tomar un tiempo de
+                    10 días hábiles. </br></br>
+
+                    • Después de que el proceso sea exitoso, se realizara una visita domiciliaria para
+                    evidenciar la calidad de vida que se le otorgara a nuestro integrante de la familia. Una vez
+                    culminado este proceso con una respuesta positiva en periodos de cada 3 meses se estará
+                    realizando visitas domiciliarias para garantizar que sus derechos y calidad de vida sea
+                    continuos por todo su ciclo de vida. </br></br>
+                </p>
+            </div>
+        </div>
+
+        <div class="questions__padding">
+            <div class="questions__answer">
+                <h3 class="questions__title">¿Solo puedo donar dinero?
+                    <span class="questions__arrow">
+                        <img src="{%static 'images/arrow.svg'%}" class="questions__img">
+                    </span>
+                </h3>
+
+                <p class="questions__show">
+                    En nuestra fundación manejamos diversas formar de poder contribuir a la mejora contante de
+                    los integrantes de nuestra familia, estas opciones serian: </br>
+                    </br></br>
+                    • Postularte como voluntario para ayudar en las múltiples tareas de la institución aportando
+                    experiencias y saberes en cada proceso.
+                    </br></br>
+                    • Postulándote como pasante en donde podrás demostrar y compartir todo el conocimiento que
+                    has adquirido en la academia.
+                    </br></br>
+                    • Realizar donación de elementos o materiales que ayuden a mejorar la calidad de vida de
+                    nuestros integrantes de esta gran familia llamada Goticas de amor animal.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions__offer">
+        <h2 class="subtitulo">¿Deseas saber mas sobre la fundación?</h2>
+        <p class="questions__copy">Tu mejor aventura comienza aquí.</br> Te invitamos a que nos conozcas más
+            nuestra familia y fundación, dale clic a el botón contáctanos y obtén más información sobre
+            nosotros.
+            </br>¡Recuerda seguirnos en nuestras redes sociales!
+        </p>
+        <a href="#" class="cta">Contactanos</a>
+    </div>
+</div>
+
 {%endblock%}
 
 
-{%block scripts%} 
+{%block scripts%}
 <script src="{% static 'js/slider.js'%}"></script>
 <script src="{% static 'js/questions.js'%}"></script>{%endblock%}
