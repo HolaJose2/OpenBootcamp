@@ -373,6 +373,7 @@ body {
 /* Footer */
 
 .footer {
+  margin-top: 200px;
   background-color: #1d293f;
 }
 
@@ -421,25 +422,13 @@ body {
 }
 
 .formulario{
-  margin: 200px auto !important;
-  max-width: 50%;
+  padding-top: 150px;
+  max-width: 80%;
   text-align: center;
+  margin: auto;
 }
 
-.lista{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  width: 100%;
-  list-style-type: none;
-}
 
-.lista li{
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  border-bottom: 1px solid black;
-}
 
 .btn{
   padding:  5px 10px;
@@ -557,7 +546,64 @@ body {
 .btn-guardar:hover{
   color: white;
   font-size: 1.2rem;
- 
+}
+
+.tarjetas-mascotas{
+  height: 100vh;
+}
+
+.detalles-mascota{
+  display: flex;
+  border: 1px solid black;
+
+
+}
+.detalles-info{
+  width: 500px;
+}
+
+
+.detalles-info ul {
+  width: 100%;
+}
+
+.detalles-info ul li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.detalles-imagen{
+  width: 300px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.detalles-imagen img{
+  width: 200px;
+  border-radius: 10px;
+}
+
+.lista{
+  width: 100%;
+  list-style-type: none;
+}
+
+.lista li{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+
+#imagen-clear_id, #id_imagen{
+  display: flex;
 }
 
 @media (max-width: 1200px) {

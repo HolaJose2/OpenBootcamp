@@ -36,6 +36,7 @@ class Mascota(models.Model):
     raza = models.ForeignKey(Raza,on_delete=models.SET_NULL,null=True,blank=True)
     usuario = models.ForeignKey(Usuario,on_delete=models.SET_NULL,null=True,blank=True)
     hogar_paso = models.ForeignKey(HogarPaso,on_delete=models.SET_NULL,null=True,blank=True)
+    imagen = models.ImageField(null=True,blank=True)
     
     def __str__(self) :
         return self.nombre

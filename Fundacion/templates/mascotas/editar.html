@@ -17,7 +17,7 @@
     <span class="aux-btns-form">
         <a href="{%url 'mascota'%}">Volver Atras</a>
     </span>
-    <form action="{%url 'editarMascota' id=id %}" class="div-formulario" method="POST">
+    <form action="{%url 'editarMascota' id=id %}" class="div-formulario" method="POST" enctype="multipart/form-data">
         {%csrf_token%}
         {{form.as_div}}
         <input type="submit" value="Guardar" class="btn-guardar">

@@ -8,23 +8,30 @@
     <h1>Mascota</h1>
     <br />
     <span class="aux-btns">
-        <a href="{%url 'mascota'%}" >Volver Atras</a>
+        <a href="{%url 'mascota'%}">Volver Atras</a>
 
     </span>
     <br />
 
-    <ul class="lista">
-        <li><b>Nombre:</b>{{mascota.nombre}}</li>
-        <li><b>Edad:</b>{{mascota.edad}}</li>
-        <li><b>Genero:</b>{{mascota.genero}}</li>
-        <li><b>Tamaño:</b>{{mascota.tamaño}}</li>
-        <li><b>Fecha de adopcion:</b>{{mascota.fecha_adopcion}}</li>
-        <li><b>Estado:</b>{{mascota.estado_mascota}}</li>
-        <li><b>Raza:</b>{{mascota.raza}}</li>
-        <li><b>Usuario:</b>{{mascota.usuario}}</li>
-        <li><b>Hogar de Paso:</b>{{mascota.hogar_paso}}</li>
-
-    </ul>
+    <div class="detalles-mascota">
+        <div class="detalles-info">
+            <ul>
+                <li><b>Nombre:</b>{{mascota.nombre}}</li>
+                <li><b>Edad:</b>{{mascota.edad}}</li>
+                <li><b>Genero:</b>{{mascota.genero}}</li>
+                <li><b>Tamaño:</b>{{mascota.tamaño}}</li>
+                <li><b>Fecha de adopcion:</b>{{mascota.fecha_adopcion}}</li>
+                <li><b>Estado:</b>{{mascota.estado_mascota}}</li>
+                <li><b>Raza:</b>{{mascota.raza}}</li>
+                <li><b>Usuario:</b>{{mascota.usuario}}</li>
+                <li><b>Hogar de Paso:</b>{{mascota.hogar_paso}}</li>
+            </ul>
+        </div>
+        <div class="detalles-imagen">
+            <h1>Foto:</h1>
+            <img src="{{mascota.imagen.url}}" alt="" width="25%"></li>
+        </div>
+    </div>
 </div>
 
 {%endblock%}

@@ -8,7 +8,7 @@
     <span class="aux-btns-form">
         <a href="{%url 'mascota' %}">Volver Atras</a>
     </span>
-    <form action="{% url 'crearMascota' %}" class="div-formulario" method="POST">
+    <form action="{% url 'crearMascota' %}" class="div-formulario" method="POST" enctype="multipart/form-data">
         {%csrf_token%}
         {{form.as_div}}
         <div>

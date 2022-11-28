@@ -31,7 +31,7 @@ def editar(request,id):
         return render(request,'mascotas/editar.html',context)
 
     if request.method == 'POST':
-        form = MascotaForm(request.POST,instance=mascota)
+        form = MascotaForm(request.POST,instance=mascota,files=request.FILES)
         if form.is_valid():
             form.save()
         context ={
@@ -39,6 +39,8 @@ def editar(request,id):
             'id': id
         }
         messages.success(request, 'Mascota Actualizada.')
+        context['form'] = MascotaForm(instance=Mascota.objects.get(id=id))
+
         return render(request,'mascotas/editar.html',context)
 
 
@@ -52,7 +54,7 @@ def crear(request):
         return render(request,'mascotas/crear.html',context)
 
     if request.method == 'POST':
-        form = MascotaForm(request.POST)
+        form = MascotaForm(request.POST,files=request.FILES)
         if form.is_valid():
             form.save()
         return redirect('mascota')
